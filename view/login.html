@@ -1,0 +1,18 @@
+{% extends "template/layout.html" %}
+
+{% block title %}Login{% endblock %}
+{% block content %}
+    <h3>Login</h3>
+    <span style="color:red">{{ flash.message('error')[0] }}</span>
+    <form method="POST" action="/login">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="username...." name="username" required autofocus/>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="password...." name="password" required/>
+        </div>
+        <input type="submit" value="Login"/>
+    </form>
+{% endblock %}

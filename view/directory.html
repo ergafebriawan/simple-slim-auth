@@ -1,0 +1,11 @@
+{% extends "template/layout.html" %}
+
+{% block title %}Library{% endblock %}
+{% block content %}
+    <h3>Directory</h3>
+    <ol>
+        {% for list in list_dir %}
+            <li><a href="">{{list}}</a></li>
+        {% endfor %}
+    </ol>
+{% endblock %}

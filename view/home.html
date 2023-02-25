@@ -1,0 +1,12 @@
+{% extends "template/layout.html" %}
+
+{% block title %}Home{% endblock %}
+{% block content %}
+    <h3>Home</h3>
+    {% if name != '' %}
+    <h4>Logged in: {{name}}</h4>
+    {% endif %}
+    <p>
+        Welcome to my awesome homepage.
+    </p>
+{% endblock %}
